@@ -16,22 +16,34 @@
              <a href="recreate.html">recreate</a><br>
         </nav>
     </header>
-      
-            
-           
-     
-   
     <div>
-         <form action="">
-        <input type="text" placeholder="name"> <br>
-        <label for="gender">gender : </label>
-        <input type="radio" name="male" id=""><label for="male">male</label>
-        <input type="radio" name="male" id=""><label for="male">female</label><br>
-        <label for="gender">contact_number: </label>
-        <input type="text">
-        <br>
-        <input type="submit" name="female" id="">
-    </form>
+
+        <form action="action_page.php">
+    First name: <br>
+    <input type="text" name ="firstname" placeholder="First name"><br>
+    Last name:<br>
+    <input type="text"  name="lastname"  placeholder= "Family Name" ><br/>
+    <br/>
+    Select gender: <br/>
+    <input type="radio" name ="gender" value="male"  checked> Male <br/>
+    <input type ="radio" name="gender"  value="female"> Female <br/>
+    <input  type="radio" name ="gender" value="other" > Other <br/>
+    <br/>
+Select your car manufacturer: <br/>
+   <select  name="cars">  
+       <option value="none"></option>                                   
+      <option value="ford">FORD</option>
+      <option value="vw"  selected>BMW
+       </option>                               
+      <option value="fiat">Fiat </option>
+    </select>
+    <br /><br/>
+    Tell us smth about you: <br/>
+     <textarea  name="message" rows ="10" cols= "30">please write your text.
+    </textarea>
+    <br/>
+    <input  type ="submit" value ="Submit">
+   </form>
     </div>
     
    
